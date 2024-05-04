@@ -55,7 +55,7 @@ class Shell:
         stderr: int | IO | None = subprocess.PIPE,
         env: dict[str, str] | None = None,
         check: bool = False,
-        shell: bool = True,
+        shell: bool = False,
         text: bool = True,
     ) -> CompletedProcess:
         """
