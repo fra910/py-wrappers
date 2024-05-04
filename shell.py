@@ -56,6 +56,7 @@ class Shell:
         env: dict[str, str] | None = None,
         check: bool = False,
         shell: bool = True,
+        text: bool = True,
     ) -> CompletedProcess:
         """
         Execute a shell command from a string.
@@ -79,6 +80,7 @@ class Shell:
             env=env,
             check=check,
             shell=shell,
+            text=text,
         )
         logger.debug(f"Got result {res}")
         return res
